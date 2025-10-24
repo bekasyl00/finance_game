@@ -169,7 +169,7 @@
     let startupGain = 0;
     if (state.assets.startup > 0) {
       const chance = Math.random();
-      if (chance < 0.60) {
+      if (chance < 0.30) {
         startupGain = state.assets.startup * 5.0; // +500%
         state.assets.startup += startupGain;
         log(`Startup: BIG WIN! +500% -> +$${format(startupGain)}`);
